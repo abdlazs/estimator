@@ -1,0 +1,103 @@
+@import "main.css";
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+#auth .watermark {
+  background: #fff;
+  width: 320px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 10px 10px 10px 5px;
+  clip-path: polygon(0 0, 80% 0%, 100% 100%, 0% 100%);
+}
+#auth .card {
+  border: 0;
+  border-radius: 24px;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+#auth .card-header {
+  border: 0;
+  border-radius: 24px;
+  padding: 20px 20px 10px 20px;
+  background-color: #fff;
+}
+#auth input {
+  font-size: 12pt;
+  font-weight: 400;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-radius: 12px;
+}
+#auth .input-group span {
+  position: absolute;
+  height: 80%;
+  top: 10%;
+  left: 5px;
+  z-index: 2;
+  padding: 10px;
+  border-radius: 12px;
+  background: var(--bs-success-light);
+  border: 1px solid var(--bs-success-light);
+}
+#auth .captcha input {
+  background: transparent;
+}
+#auth .captcha input {
+  padding-left: 5.5rem;
+}
+
+#auth .form-control:focus {
+  box-shadow: unset;
+}
+#auth .option {
+  margin-top: 2.5rem;
+}
+#auth .option hr {
+  color: #969696;
+}
+#auth .option span {
+  color: #969696;
+  font-weight: 500;
+  font-size: 16px;
+  background: #fff;
+  padding: 7px 25px;
+  position: absolute;
+  margin-top: -37px;
+  left: 38%;
+}
+
+#auth .option .google {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  margin-top: 20px;
+}
+#auth .option .google img {
+  width: 35px;
+}
+#auth .option .google p {
+  margin-left: 5px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #969696;
+}
+/* input type password */
+#auth input.password ~ i {
+  cursor: pointer;
+  color: #ddd;
+  position: absolute;
+  right: 20px;
+  top: 22px;
+}
+
+.swal2-html-container {
+  font-weight: 400;
+  font-style: italic;
+  font-size: 14px;
+  line-height: 24px;
+  color: #cacaca;
+}

@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/fav.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="asset/jquery/jquery-3.6.1.min.js"></script>
+
+    <link rel="stylesheet" href="asset/bootstrap5_2_1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="asset/fontawesome620/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.2/font/bootstrap-icons.min.css"
+      integrity="sha512-YFENbnqHbCRmJt5d+9lHimyEMt8LKSNTMLSaHjvsclnZGICeY/0KYEeiHwD1Ux4Tcao0h60tdcMv+0GljvWyHg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="asset/owlcarousel/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="asset/owlcarousel/assets/owl.theme.default.min.css"
+    />
+
+    <link rel="stylesheet" href="main/main.css" />
+    <title>Estimator.id</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg bg-white">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="img/logo.png" alt="" width="150px" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="px-4 nav-link" aria-current="page" href="#">Koleksi</a>
+            </li>
+            <li class="nav-item">
+              <a class="px-4 nav-link" href="#">Paket</a>
+            </li>
+            <li class="nav-item">
+              <a class="px-4 nav-link" href="#">Fitur</a>
+            </li>
+            <li class="nav-item">
+              <a class="px-4 nav-link" href="#">Tutorial</a>
+            </li>
+          </ul>
+        </div>
+        <div class="text-end d-none d-lg-block">
+          <a href="masuk.html" class="btn rounded-3 btn-success me-2">Masuk</a>
+          <a href="daftar.html" class="btn rounded-3 btn-outline-success"
+            >Daftar</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section id="tagline" class="pt-3">
+        <div class="overlay free">
+          <div>
+            <img src="img/landing-page/subtract.png" width="25px" />
+          </div>
+          <div>
+            <p>DAFTAR SEKARANG</p>
+            <p>Dapatkan fitur GRATIS!!!</p>
+          </div>
+        </div>
+        <div class="overlay new">
+          <div>
+            <img src="img/landing-page/subtract1.png" width="25px" />
+          </div>
+          <div>
+            <p>Database Material</p>
+            <p>Terupdate & Terlengkap</p>
+          </div>
+        </div>
+        <div class="overlay team ps-0">
+          <div>
+            <p>Kolaborasi</p>
+            <p>dengan tim anda sekarang</p>
+            <div class="text-center my-2">
+              <div class="list">
+                <img src="img/landing-page/ellipse 3.png" alt="" />
+                <img src="img/landing-page/ellipse 4.png" alt="" />
+                <img src="img/landing-page/ellipse 5.png" alt="" />
+                <img src="img/landing-page/ellipse 6.png" alt="" />
+              </div>
+              <span>3+</span>
+            </div>
+          </div>
+        </div>
+        <div
+          class="span-overlay d-none d-lg-block"
+          style="top: 6rem; right: 3rem"
+        >
+          <img src="img/landing-page/titik.png" />
+        </div>
+        <div
+          class="span-overlay d-none d-lg-block"
+          style="top: 33rem; left: 5rem"
+        >
+          <img src="img/landing-page/titik.png" />
+        </div>
+        <div class="container py-3">
+          <div class="row">
+            <div class="col-12 col-lg-7 my-auto ps-lg-5 pt-5 pt-lg-0">
+              <div class="content mt-5 mt-lg-0">
+                <p>
+                  Mari buat <span class="text-success">RAB</span> secara online
+                  dengan
+                </p>
+                <h1 class="text-animation">
+                  <ul>
+                    <li>MUDAH</li>
+                    <li>CEPAT</li>
+                    <li>AKURAT</li>
+                  </ul>
+                </h1>
+                <p>
+                  hanya di
+                  <span class="text-success">ESTIMATOR.ID</span> Platform
+                  <span class="text-success">RAB</span> online No. 1 di
+                  Indonesia
+                </p>
+              </div>
+              <div class="button-tagline mt-3 ps-3">
+                <a href="#" class="btn btn-success ms-3 px-4 py-2"
+                  >Gabung Akun Premium</a
+                >
+                <a href="#" class="btn btn-outline-success px-4 py-2 ms-3"
+                  >Video Tutorial RAB</a
+                >
+              </div>
+            </div>
+            <div class="col-12 col-lg-5 text-end">
+              <img src="img/landing-page/landing.png" class="w-100" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="statistik" class="py-5">
+        <div class="container">
+          <div class="row g-2">
+            <div class="col-6 col-lg-3">
+              <div class="statistik-wrapper">
+                <p class="price text-success">16.723</p>
+                <p class="desc">Estimator</p>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3">
+              <div class="statistik-wrapper">
+                <p class="price text-success">9.131</p>
+                <p class="desc">Proyek</p>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3">
+              <div class="statistik-wrapper">
+                <p class="price text-success">16.778</p>
+                <p class="desc">Material & Upah</p>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3">
+              <div class="statistik-wrapper">
+                <p class="price text-success">30.020</p>
+                <p class="desc">Analisis Harga Satuan</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="pt-3">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="bg">
+              <img src="img/landing-page/bg-about.png" alt="" />
+            </div>
+            <div class="col-12 col-md-8 col-lg-5 py-5 my-5" style="z-index: 2">
+              <h3 class="subtitle">Mengenal Estimator.id Yuk</h3>
+              <p class="text-justify text-semidark">
+                Aplikasi pembuatan
+                <span class="text-dark">RAB online</span> yang memiliki lebih
+                dari <span class="text-dark">30.000 database</span> dengan harga
+                terupdate secara <span class="text-dark">realtime</span> serta
+                dapat <span class="text-dark">berkolaborasi</span> dengan siapa
+                saja dan dimana saja.
+              </p>
+              <a href="#" class="btn btn-success fw-500">Mulai Proyek</a>
+            </div>
+            <div class="col-12 col-md-4 col-lg-6">
+              <img src="img/landing-page/landing_tentang.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about1" class="pt-3">
+        <div class="container">
+          <div class="row g-3 justify-content-center">
+            <div id="title" class="col-12">
+              <p class="text-bg">estimator.id</p>
+              <h4>Kenapa harus Estimator.id?</h4>
+            </div>
+            <!--  -->
+            <div class="col-lg-4 col-md-5 col-12">
+              <img src="img/landing-page/vector1.png" alt="" />
+            </div>
+            <div class="col-lg-6 col-md-7 col-12 my-auto ps-lg-5">
+              <h3 class="subtitle fw-600">Online dan Gratis</h3>
+              <p class="text-semidark text-justify">
+                Membuat RAB kapanpun di manapun secara online dan gratis tanpa
+                perlu download dan install aplikasi
+              </p>
+            </div>
+            <!--  -->
+            <!--  -->
+            <div class="col-lg-6 col-md-7 col-12 my-auto pe-lg-5">
+              <h3 class="subtitle fw-600">Cepat dan Akurat</h3>
+              <p class="text-semidark text-justify">
+                Menyingkat waktu pembuatan RAB dengan hasil yang akurat karena
+                dukungan database analisis harga satuan dan material terupdate
+                dari sumber yang dapat dipertanggung jawabkan
+              </p>
+            </div>
+            <div class="col-lg-4 col-md-5 col-12">
+              <img src="img/landing-page/vector1.png" alt="" />
+            </div>
+            <!--  -->
+            <!--  -->
+            <div class="col-lg-4 col-md-5 col-12">
+              <img src="img/landing-page/vector1.png" alt="" />
+            </div>
+            <div class="col-lg-6 col-md-7 col-12 my-auto ps-lg-5">
+              <h3 class="subtitle fw-600">Reusable</h3>
+              <p class="text-semidark text-justify">
+                Seluruh data proyek yang telah dibuat dapat dengan mudah
+                digunakan kembali untuk proyek lainnya
+              </p>
+            </div>
+            <!--  -->
+          </div>
+        </div>
+      </section>
+      <section id="konsultasi" class="py-5">
+        <div class="container-fluid mx-0 py-5 bg-success-light">
+          <div class="container my-5">
+            <div class="row">
+              <div class="col-12">
+                <h3 class="title">Mari Konsultasi dengan Kami</h3>
+                <p class="text-center text-semidark">
+                  Anda membutuhkan
+                  <span class="text-dark">jasa perencanaan anggaran biaya</span>
+                  yang cepat dan akurat?
+                </p>
+                <p class="text-center text-semidark">
+                  Segera <span class="text-dark">konsultasikan</span> bersama
+                  tim <span class="text-dark">Estimator</span> terbaik kami!
+                </p>
+                <div class="text-center mt-3">
+                  <a href="#" class="btn btn-success px-4 py-2"
+                    >Konsultasi Sekarang</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="katalog" class="py-3">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h3 class="title mb-4">Katalog</h3>
+              <p class="text-center text-semidark">
+                Material apa yang sedang Anda cari?
+              </p>
+              <p class="text-center text-semidark">
+                Memilih material-material untuk proyek Anda kini semakin mudah
+                melalui katalog produk dari berbagai suplier
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid px-0 mt-4 mb-5 owl-carousel">
+          <div class="item">
+            <img src="img/landing-page/katalog/katalog 1.png" alt="" />
+          </div>
+          <div class="item">
+            <img src="img/landing-page/katalog/katalog 2.png" alt="" />
+          </div>
+          <div class="item">
+            <img src="img/landing-page/katalog/katalog 3.png" alt="" />
+          </div>
+          <div class="item">
+            <img src="img/landing-page/katalog/katalog 4.png" alt="" />
+          </div>
+          <div class="item">
+            <img src="img/landing-page/katalog/katalog 5.png" alt="" />
+          </div>
+          <div class="item">
+            <img src="img/landing-page/katalog/katalog 6.png" alt="" />
+          </div>
+          <div class="item">
+            <img src="img/landing-page/katalog/katalog 7.png" alt="" />
+          </div>
+          <div class="item">
+            <img src="img/landing-page/katalog/katalog 1.png" alt="" />
+          </div>
+          <div class="item">
+            <img src="img/landing-page/katalog/katalog 2.png" alt="" />
+          </div>
+          <div class="item">
+            <img src="img/landing-page/katalog/katalog 3.png" alt="" />
+          </div>
+          <div class="item">
+            <img src="img/landing-page/katalog/katalog 4.png" alt="" />
+          </div>
+          <div class="item">
+            <img src="img/landing-page/katalog/katalog 5.png" alt="" />
+          </div>
+          <div class="item">
+            <img src="img/landing-page/katalog/katalog 6.png" alt="" />
+          </div>
+          <div class="item">
+            <img src="img/landing-page/katalog/katalog 7.png" alt="" />
+          </div>
+        </div>
+        <div class="container">
+          <div class="row g-3 justify-content-around">
+            <!--  -->
+            <div class="col-12 col-lg-3 card__landing">
+              <span>Rekomendasi</span>
+              <div class="content">
+                <img src="img/landing-page/katalog/rekomendasi1.png" />
+                <div class="hover">
+                  <a href="#">Detail Informasi</a>
+                </div>
+              </div>
+              <div class="des mt-2 cursor-default">
+                <h6>Bathtub & Wellness Tub BTAS9831-0020400C5</h6>
+                <p>Rp 99.700.000 / unit</p>
+              </div>
+            </div>
+            <!--  -->
+            <!--  -->
+            <div class="col-12 col-lg-3 card__landing">
+              <span>Rekomendasi</span>
+              <div class="content">
+                <img src="img/landing-page/katalog/rekomendasi2.png" />
+                <div class="hover">
+                  <a href="#">Detail Informasi</a>
+                </div>
+              </div>
+              <div class="des mt-2 cursor-default">
+                <h6>Bathtub & Wellness Tub BTAS9831-0020400C5</h6>
+                <p>Rp 99.700.000 / unit</p>
+              </div>
+            </div>
+            <!--  -->
+            <!--  -->
+            <div class="col-12 col-lg-3 card__landing">
+              <span>Rekomendasi</span>
+              <div class="content">
+                <img src="img/landing-page/katalog/rekomendasi3.png" />
+                <div class="hover">
+                  <a href="#">Detail Informasi</a>
+                </div>
+              </div>
+              <div class="des mt-2 cursor-default">
+                <h6>Bathtub & Wellness Tub BTAS9831-0020400C5</h6>
+                <p>Rp 99.700.000 / unit</p>
+              </div>
+            </div>
+            <!--  -->
+            <div class="col-12 text-center mt-5">
+              <a href="#" class="btn btn-outline-success px-4 py-2"
+                >Lihat Selengkapnya</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="testimoni" class="py-4">
+        <div class="container-fluid">
+          <div class="row justify-content-between">
+            <div class="bg">
+              <img src="img/landing-page/bg-about.png" alt="" />
+            </div>
+            <div class="col-12">
+              <h3 class="title mb-3">Testimoni</h3>
+              <p class="text-center text-semidark">
+                Apa kata mereka yang telah menggunakan Estimator.id?
+              </p>
+            </div>
+            <div class="col-12 col-md-4 col-lg-6">
+              <img src="img/landing-page/klien/riani.png" />
+            </div>
+            <div class="col-12 col-md-8 col-lg-5" style="z-index: 2">
+              <div
+                id="carouselExampleCaptions"
+                class="carousel slide carousel-fade"
+              >
+                <div class="carousel-indicators text-end">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="3"
+                    aria-label="Slide 4"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="4"
+                    aria-label="Slide 5"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <!--  -->
+                  <div class="testimoni__content carousel-item active">
+                    <img src="img/landing-page/klien/testimoni1.png" alt="" />
+                    <p class="testimoni_name">Fajar Suryo Isworo, ST</p>
+                    <p class="testimoni_job">Arsitek</p>
+                    <p class="testimoni_desc">
+                      “Menggunakan Estimator.id kita sangat dimudahkan dalam
+                      melakukan perhitungan RAB. Fitur kolaborasi proyek maupun
+                      ketersediaan database AHSP dan harga bahan, sangat banyak
+                      membantu.”
+                    </p>
+                  </div>
+                  <!--  -->
+                  <!--  -->
+                  <div class="testimoni__content carousel-item">
+                    <img src="img/landing-page/klien/testimoni2.png" alt="" />
+                    <p class="testimoni_name">Dodik Setyo Dwijayanto, ST</p>
+                    <p class="testimoni_job">Manajer Operasional, PT BEE</p>
+                    <p class="testimoni_desc">
+                      “Sebuah website yang memudahkan perhitungan anggaran biaya
+                      pembangunan rumah sesuai dengan analisis dari SNI dan
+                      PUPR, serta harga material dan tukang terkini sesuai
+                      dengan Peraturan Daerah.”
+                    </p>
+                  </div>
+                  <!--  -->
+                  <!--  -->
+                  <div class="testimoni__content carousel-item">
+                    <img src="img/landing-page/klien/testimoni3.png" alt="" />
+                    <p class="testimoni_name">Dzul Faqhar</p>
+                    <p class="testimoni_job">Mahasiswa D3 Teknik Sipil, UGM</p>
+                    <p class="testimoni_desc">
+                      “Dengan Estimator.id mengerjakan RAB jadi lebih praktis.
+                      Saya tidak perlu lagi memasukkan analisis harga satuan
+                      satu per satu.”
+                    </p>
+                  </div>
+                  <!--  -->
+                  <!--  -->
+                  <div class="testimoni__content carousel-item">
+                    <img src="img/landing-page/klien/testimoni4.png" alt="" />
+                    <p class="testimoni_name">Wahyuning Samudro, ST</p>
+                    <p class="testimoni_job">Arsitek</p>
+                    <p class="testimoni_desc">
+                      “Sekarang tidak perlu takut lagi dengan angka, karena
+                      menggunakan Estimator.id menghitung RAB menjadi sangat
+                      mudah.”
+                    </p>
+                  </div>
+                  <!--  -->
+                  <!--  -->
+                  <div class="testimoni__content carousel-item">
+                    <img src="img/landing-page/klien/testimoni5.png" alt="" />
+                    <p class="testimoni_name">Fajar Suryo Isworo, ST</p>
+                    <p class="testimoni_job">Arsitek</p>
+                    <p class="testimoni_desc">
+                      “Menggunakan Estimator.id kita sangat dimudahkan dalam
+                      melakukan perhitungan RAB. Fitur kolaborasi proyek maupun
+                      ketersediaan database AHSP dan harga bahan, sangat banyak
+                      membantu.”
+                    </p>
+                  </div>
+                  <!--  -->
+                </div>
+                <button
+                  class="d-none carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="d-none carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="klien" class="py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h3 class="title mb-2">Klien Kami</h3>
+              <p class="text-center text-semidark">
+                Banyak perusahaan dan institusi yang telah mempercayakan
+                kebutuhan estimasi anggaran proyeknya menggunakan Estimator.id
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid px-0 my-4 owl-carousel">
+          <div class="item">
+            <img src="img/landing-page/klien/klien 1.png" alt="" />
+          </div>
+          <div class="item">
+            <img src="img/landing-page/klien/klien 2.png" alt="" />
+          </div>
+          <div class="item">
+            <img src="img/landing-page/klien/klien 3.png" alt="" />
+          </div>
+          <div class="item">
+            <img src="img/landing-page/klien/klien 4.png" alt="" />
+          </div>
+          <div class="item">
+            <img src="img/landing-page/klien/klien 5.png" alt="" />
+          </div>
+          <div class="item">
+            <img src="img/landing-page/klien/klien 6.png" alt="" />
+          </div>
+          <div class="item">
+            <img src="img/landing-page/klien/klien 1.png" alt="" />
+          </div>
+          <div class="item">
+            <img src="img/landing-page/klien/klien 2.png" alt="" />
+          </div>
+          <div class="item">
+            <img src="img/landing-page/klien/klien 3.png" alt="" />
+          </div>
+          <div class="item">
+            <img src="img/landing-page/klien/klien 4.png" alt="" />
+          </div>
+          <div class="item">
+            <img src="img/landing-page/klien/klien 5.png" alt="" />
+          </div>
+          <div class="item">
+            <img src="img/landing-page/klien/klien 6.png" alt="" />
+          </div>
+        </div>
+        <div class="container">
+          <div class="row g-3 justify-content-around">
+            <!--  -->
+            <div class="col-12 col-lg-3 card__landing">
+              <span>Artikel</span>
+              <div class="content">
+                <img src="img/landing-page/aktifitas1.png" />
+                <div class="hover">
+                  <a href="#">Detail Informasi</a>
+                </div>
+              </div>
+              <div class="des mt-2 cursor-default">
+                <h6 class="fw-400 fs-14 ls-0 lh-24">
+                  METODE-METODE DALAM PERHITUNGAN RENCANA ANGGARAN BIAYA
+                </h6>
+              </div>
+            </div>
+            <!--  -->
+            <!--  -->
+            <div class="col-12 col-lg-3 card__landing">
+              <span>Artikel</span>
+              <div class="content">
+                <img src="img/landing-page/aktifitas2.png" />
+                <div class="hover">
+                  <a href="#">Detail Informasi</a>
+                </div>
+              </div>
+              <div class="des mt-2 cursor-default">
+                <h6 class="fw-400 fs-14 ls-0 lh-24">
+                  PROFESI PERENCANA ANGGARAN BIAYA DI INDUSTRI KONSTRUKSI
+                </h6>
+              </div>
+            </div>
+            <!--  -->
+            <!--  -->
+            <div class="col-12 col-lg-3 card__landing">
+              <span>Artikel</span>
+              <div class="content">
+                <img src="img/landing-page/aktifitas3.png" />
+                <div class="hover">
+                  <a href="#">Detail Informasi</a>
+                </div>
+              </div>
+              <div class="des mt-2 cursor-default">
+                <h6 class="fw-400 fs-14 ls-0 lh-24">
+                  MSUDAH PERNAH COBA FITUR KOLABORASI PROYEK DI ESTIMATOR.ID?
+                </h6>
+              </div>
+            </div>
+            <!--  -->
+          </div>
+        </div>
+        <div class="col-12 text-center mt-5">
+          <a href="#" class="btn btn-outline-success px-4 py-2"
+            >Lihat Selengkapnya</a
+          >
+        </div>
+      </section>
+      <section class="pt-3">
+        <div class="container">
+          <div class="row bg-success-light rounded-24">
+            <div class="col-lg-5 p-5">
+              <div
+                class="text-center rounded-16"
+                style="background-color: #e4f9bd"
+              >
+                <img class="w-75" src="img/landing-page/vectorWallet.png" />
+              </div>
+            </div>
+            <div class="col-lg-6 my-auto ps-0">
+              <h3 class="subtitle fw-600">Yuk Raih Komisi!</h3>
+              <p class="text-semidark">
+                Dapatkan keuntungan hingga jutaan rupiah dengan bergabung
+                menjadi affiliator dari Estimator.id
+              </p>
+              <a href="#" class="btn btn-success px-4 py-2 mt-3"
+                >Gabung Sekarang</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="pt-4 mt-5 bg-success">
+      <div class="container">
+        <div class="row text-white">
+          <!-- kolom pertama -->
+          <div class="col-12 col-lg-7 mb-5 mb-lg-0">
+            <h4 class="text-center text-lg-start">Hubungi Kami</h4>
+            <p class="text-center text-lg-start">
+              Kami sangat senang bisa berkomunikasi dengan Anda. Pastikan selalu
+              terhubung dengan kami untuk mendapatkan informasi terbaru.
+            </p>
+            <div class="row mt-4 justify-content-center">
+              <div class="col-6 col-md-5 col-lg-6">
+                <span class="icon-footer">
+                  <a href="#" class="fa-regular fa-envelope"></a>
+                  <p>admin@estimator.id</p>
+                </span>
+              </div>
+              <div class="col-6 col-md-5 col-lg-6">
+                <span class="icon-footer">
+                  <a href="#" class="fa-solid fa-phone"></a>
+                  <p>+6274-511067</p>
+                </span>
+              </div>
+              <div class="col-12 mt-3">
+                <span
+                  class="icon-footer justify-content-center justify-content-lg-start"
+                >
+                  <a href="#" class="fa-brands me-4 fa-facebook"></a>
+                  <a href="#" class="fa-brands me-4 fa-twitter"></a>
+                  <a href="#" class="fa-brands me-4 fa-instagram"></a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <!-- kolom kedua -->
+          <div class="col-6 col-lg-2">
+            <h4>Estimator.id</h4>
+            <ul>
+              <li><a href="">Koleksi</a></li>
+              <li><a href="">Paket</a></li>
+              <li><a href="">Fitur</a></li>
+              <li><a href="">Tutorial</a></li>
+            </ul>
+          </div>
+          <!-- kolom ketiga -->
+          <div class="col-6 col-lg-3">
+            <h4>Tentang Kami</h4>
+            <ul>
+              <li><a href="">Ringkasan Eksekutif</a></li>
+              <li><a href="">Cara Penggunaan</a></li>
+              <li><a href="">FAQ</a></li>
+              <li><a href="">Kebijakan Privasi</a></li>
+              <li><a href="">Peraturan & Ketentuan</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid mx-0" style="background: #6caa3a">
+        <div class="row">
+          <div class="col-12 text-center text-white py-3">
+            <p>© 2021 Estimator.id. All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      $(document).ready(function () {
+        $("#katalog,#klien,#testimoni").each(function () {
+          $(this).find(".owl-carousel").owlCarousel({
+            loop: true,
+            margin: 10,
+            autoplay: true,
+            autoplayTimeout: 1000,
+            autoWidth: true,
+            // rtl: true,
+            slideTransition: "linear",
+            autoplaySpeed: 2000,
+            autoplayHoverPause: false,
+            dots: false,
+          });
+        });
+        const myCarousel = $("#carouselExampleCaptions");
+        const nextBtn = myCarousel.find(".carousel-control-next");
+        setInterval(() => {
+          nextBtn.click();
+        }, 3000);
+      });
+    </script>
+    <script src="asset/bootstrap5_2_1/js/bootstrap.bundle.min.js"></script>
+    <script src="asset/owlcarousel/owl.carousel.js"></script>
+  </body>
+</html>

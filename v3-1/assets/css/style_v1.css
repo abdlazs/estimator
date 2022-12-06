@@ -1,0 +1,249 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	/* font-family: 'Poppins', sans-serif; */
+	font-family: 'Quicksand', sans-serif;
+}
+a{
+	text-decoration: none;
+}
+.btn-login{
+	background: #09AB15;
+	color: #fff;
+	border: none;
+	border-radius: 8px;
+}
+.btn-eid-v1{
+	background: #82C631;
+	color: #fff;
+}
+.btn-eid-v1:hover{
+	color: #82C631;	
+	border-color: #82C631;	
+}
+.btn-eid-dark-v1{
+	background: #09AB15;
+	color: #fff;
+}
+.btn-eid-dark-v1:hover{
+	color: #09AB15;
+	border: 1px solid #09AB15;
+}
+.btn-light-50{
+	background: rgba(255, 255, 255, 0.4);
+}
+.btn-red{
+	background: red;
+	color: 	white;
+}
+.btn-red:hover{
+	background: linear-gradient(to right, orange, rgb(244, 219, 174));
+	color: 	white;
+	border: none;
+}
+.text-eid-v1{
+	color: #82C631;
+}
+.text-eid-v1-2{
+	color: #61B307;
+}
+.text-eid-dark-v1{
+	color : #09AB15;
+}
+.text-orange{
+	color: orange;
+}
+.bg-eid-v1{
+	background: #A2DB5E;
+}
+.bg-eid-light-v1{
+	background: rgba(152, 218, 77, 0.2);
+}
+.bg-light-v1{
+	background: rgba(162, 219, 94, 0.05);
+}
+.bg-eid-dark-v1{
+	background: #3A523B;
+}
+.bg-footer-eid{
+	background: #82C631;
+	color: white;
+}
+.bg-rounded-eid{
+	background: rgb(130,198,49);
+	background: radial-gradient(circle, rgba(130,198,49,0.13687193627450978) 0%, rgba(255,255,255,0) 29%);
+}
+.br-10{
+	border-radius: 10px;
+}
+.br-15{
+	border-radius: 15px;
+}
+.br-20{
+	border-radius: 20px;
+}
+.br-30{
+	border-radius: 30px;
+}
+.br-50{
+	border-radius: 50%;
+}
+.border-bottom-light-2{
+	border-bottom: 2px solid rgb(245, 241, 241);
+}
+.border-bottom-eid-dark-2{
+	border-bottom: 2px solid #09AB15;
+}
+.hw-75{
+	height: 75px;
+	width: 75px;	
+}
+.hw-95{
+	height: 95px;
+	width: 95px;	
+}
+.wh-100{
+	width: 100px;
+	height: 100px;
+}
+.of-cover{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.mh-70vh{
+	height: 70vh;
+}
+.mw-250{
+	max-width: 250px;
+}
+.grayscale{
+	filter: grayscale(100%);
+}
+.ms-40{
+	margin-left: 40px;
+}
+.box-shadow-bottom-right{
+	box-shadow: 10px 10px 5px 0px rgba(232,230,230,0.75);
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(232,230,230,0.75);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(232,230,230,0.75);
+}
+.hide{
+	display: none;
+}
+.flex-flow-row-wrap{
+	flex-flow:row wrap;
+}
+
+/* Custom Bootstrap */
+.accordion-button:not(.collapsed) {
+    color: #09AB15;
+    background: rgba(152, 218, 77, 0.2);		
+}
+.accordion-button:focus{
+	box-shadow: none;
+}
+
+
+/* End Custom Bootstrap */
+
+/* Landing Page */
+.card-login-homepage{
+	border: 0;
+	border-radius: 25px;
+	width: 25rem;
+	padding: 10px 0;
+	position: absolute;
+	right: 	5%;
+	top: 30%;
+}
+.btn-role-register.active{
+	background: #82C631;
+	color: white;
+}
+.icon-cs{
+	border: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	padding: 5px;
+	border-radius: 8px;
+}
+.icon-google{
+	border: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	padding: 5px;	
+}
+.icon-footer{
+	border: 1px solid #09AB15;
+	position: absolute;
+	left: -5px;
+	top: -5px;	
+	padding: 10px;
+	border-radius: 50%;
+}
+.text-katalog{
+	background: white;	
+	padding: 25px 0;
+	width : 375px;
+	text-align: center;
+	border-radius: 25px;
+	margin: 0 auto;	
+	position: absolute;	
+	margin-top:-40px;
+}
+.text-page-top{
+	position: absolute;		
+	width: 100%;
+	top: 15%;
+	display: flex;
+	align-items: center;
+}
+.landing-testimoni{
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+.people-img-testimoni{
+	height: 80px;
+	width: 80px;
+	margin: 0 auto;
+	margin-top: -40px;
+	background: white;
+	border-radius: 50%;
+}
+.logo-klien{
+	width: 150px;
+	margin: 0 20px;
+}
+.logo-suplier{
+	width: 200px;
+	margin: 0 20px;
+}
+
+
+@media only screen and (max-width: 992px){
+	.card-login-homepage{
+		display:none;
+	}
+	.card{
+		margin-bottom: 15px;
+	}	
+	.bg-testimoni{
+		height: 60vh;
+	}
+	.landing-testimoni .card{
+		margin-bottom: 60px;
+	}
+}
+
+@media only screen and (max-width: 768px){
+	.bg-testimoni{
+		height: 100vh;
+	}
+}

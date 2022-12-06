@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="public/icon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <script src="public/vendor/jquery/jquery-3.6.1.min.js"></script>
+    <link rel="stylesheet" href="public/vendor/bootstrap5_2_1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="public/vendor/fontawesome620/css/all.min.css" />
+    <link rel="stylesheet" href="public/css/style.css" />
+    <title>Estimator</title>
+    <style>
+        /* aktivitas Page */
+           .btn-eid-v3{
+                background: #61B307;
+                color: #fff;
+            }
+            .br-20{
+                border-radius: 20px;
+            }
+            .radio-slider {
+              display: none;
+            }
+            .cards {
+              position: relative;  
+            }
+            .card-landing-aktivitas {
+              position: absolute;  
+              left: 0;
+              right: 0;
+              width: 22rem;
+              margin: auto;
+              transition: transform .4s ease;
+              cursor: pointer;
+            }
+
+            .radio-slider:nth-child(1):checked ~ .cards label:nth-child(3), 
+            .radio-slider:nth-child(2):checked ~ .cards label:nth-child(1), 
+            .radio-slider:nth-child(3):checked ~ .cards label:nth-child(2) {
+              transform: translatex(-100%) scale(.8);              
+              z-index: 0;
+            }
+            .radio-slider:nth-child(1):checked ~ .cards label:nth-child(2), 
+            .radio-slider:nth-child(2):checked ~ .cards label:nth-child(3), 
+            .radio-slider:nth-child(3):checked ~ .cards label:nth-child(1) {
+              transform: translatex(100%) scale(.8);              
+              z-index: 0;
+            }
+            .radio-slider:nth-child(1):checked ~ .cards label:nth-child(1), 
+            .radio-slider:nth-child(2):checked ~ .cards label:nth-child(2), 
+            .radio-slider:nth-child(3):checked ~ .cards label:nth-child(3) {
+              transform: translatex(0) scale(1);              
+              z-index: 1;
+            }
+            /* end aktfitas page */
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="public/white-logo.png" width="150px" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Koleksi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Paket</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Fitur</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tutorial</a>
+                    </li>
+                </ul>
+            </div>
+            <a href="#" class="btn text-white border-0">Masuk</a>
+        </div>
+    </nav>
+    <div class="wave1">
+        <svg width="188" height="329" viewBox="0 0 188 329" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="0.5" cy="164.5" rx="187.5" ry="164.5" fill="url(#paint0_linear_1_1265)" />
+            <defs>
+                <linearGradient id="paint0_linear_1_1265" x1="-30.5" y1="425" x2="131.5" y2="40.5" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#B6ED7F" stop-opacity="0.19" />
+                    <stop offset="1" stop-color="#A1EF54" />
+                </linearGradient>
+            </defs>
+        </svg>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 text">
+                        <p>Buat RAB Anda Dalam Sekejap</p>
+                        <p>Dengan <strong class="strong">Estimator</strong></p>
+                        <p>Website pembuatan RAB secara online dan real-time pertama di Indonesia.</p>
+                        <p> Kerja hemat, hasil cepat dan akurat</p>
+                        <button class="fw-bold px-3">Mulai Proyek <i class="fa-solid fa-arrow-right"></i></button>                        
+                        <div class="angka mt-5">
+                            <div class="d-flex">
+                                <div class="me-5">
+                                    <p>16K+</p>
+                                    <p>Estimator</p>
+                                </div>
+                                <div class="me-5">
+                                    <p>9K+</p>
+                                    <p>Proyek</p>
+                                </div>
+                                <div class="me-5">
+                                    <p>16K+</p>
+                                    <p>Material & Upah</p>
+                                </div>
+                                <div class="me-5">
+                                    <p>26K+</p>
+                                    <p>Analisis Harga</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 position-relative">
+                        <img src="public/jafsdl.png" class="img-top-v32">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="wave2">
+        <h3 class="text-center tentang" style="margin-top: 180px;">Tentang Kami</h3>
+        <div class="iner-dark-eid-v3 mx-auto"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mt-5">
+                    <img src="public/kotak.png" alt="">
+                </div>
+                <div class="col-md-6 mt-5">
+                    <p class="subjudul">Apa itu Estimator?</p>
+                    <p class="deskripsi">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus proin tristique tincidunt dolor odio netus ornare magna. Quam sodales diam rutrum nunc elementum potenti ac praesent cursus. Justo eros eget eleifend malesuada id.</p>
+                    <h4 class="span">Watch video about us</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wave3">
+        <div class="container mb-5">
+            <div class="row mb-5 justify-content-center">
+                <div class="col-lg-8 card card1 border-0 mb-5 ">
+                    <div class="row text-center my-5">
+                        <h5 class=" card-text text-center mt-3" style="font-size: 28px;">Anda membutuhkan jasa perencanaan anggaran biaya yang cepat dan akurat?</h5>
+                        <p class=" card-text1 text-center mb-3" style="font-size: 18px;">Segera konsultasikan bersama tim estimator terbaik kami!</p>
+                        <button class="btn btn-konsultasi text-white mb-3" style="margin-top: 20px;">Konsultasi Sekarang</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid-eid mt-3">
+        <div class="row box">
+            <div class="col-12 text-center text-white mt-3">
+                <h3>Aktivitas</h3>
+                <div class="iner-dark-eid-v3"></div>
+            </div>         
+
+             <!-- aktivitas -->
+            <div class="">            
+                <div class="container landing-aktivitas">
+                  <input type="radio" name="slider" class="radio-slider" id="item-1" >
+                  <input type="radio" name="slider" class="radio-slider" id="item-2" checked>
+                  <input type="radio" name="slider" class="radio-slider" id="item-3">  
+                  <div class="cards py-5">
+                    <label class="card-landing-aktivitas" for="item-1" id="label-aktivitas-1">
+                      <div class="card card-aktivitas br-20 border-0 shadow-sm">
+                        <img src="public/eid.png"  class="card-img-top">
+                        <div class="card-body">
+                          <div class="fw-bold text-eid-v3">BERITA</div>
+                          <div class="fw-bold my-2">Sudah pernah coba fitur kolaborasi Estimator. Id?</div>
+                          <div class="">
+                            Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam maiores omnis reiciendis. Minima labore itaque, unde totam quaerat obcaecati nemo, ut voluptatibus mollitia voluptate, sint libero in earum porro dolor?
+                          </div>
+                          <a href="selengkapnya-aktifitas" class="mt-2 text-eid-v3">Baca selengkapnya</a>
+                        </div>
+                      </div>   
+                    </label>
+                    <label class="card-landing-aktivitas" for="item-2" id="label-aktivitas-2">
+                       <div class="card card-aktivitas br-20 border-0 shadow-sm">
+                            <img src="public/eid.png"  class="card-img-top">
+                            <div class="card-body">
+                              <div class="fw-bold text-eid-v3">ARTIKEL</div>
+                              <div class="fw-bold my-2">Profesi perencana anggaran biaya di industri konstruksi</div>
+                              <div class="">
+                                Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam maiores omnis reiciendis. Minima labore itaque, unde totam quaerat obcaecati nemo, ut voluptatibus mollitia voluptate, sint libero in earum porro dolor?
+                              </div>
+                              <a href="selengkapnya-aktifitas" class="mt-2 text-eid-v3">Baca selengkapnya</a>
+                            </div>
+                          </div>  
+                    </label>
+                    <label class="card-landing-aktivitas" for="item-3" id="label-aktivitas-3">
+                       <div class="card card-aktivitas br-20 border-0 shadow-sm">
+                            <img src="public/eid.png"  class="card-img-top">
+                            <div class="card-body">
+                              <div class="fw-bold text-eid-v3">EVENT</div>
+                              <div class="fw-bold my-2">Uji coba pertama Estimator. Id</div>
+                              <div class="">
+                                Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam maiores omnis reiciendis. Minima labore itaque, unde totam quaerat obcaecati nemo, ut voluptatibus mollitia voluptate, sint libero in earum porro dolor?
+                              </div>
+                              <a href="selengkapnya-aktifitas" class="mt-2 text-eid-v3">Baca selengkapnya</a>
+                            </div>
+                          </div>       
+                    </label>
+                  </div>
+                </div>
+                <div class="text-center mt-3 mb-5">
+                  <a href="#" class="btn btn-eid-v3 br-10 mt-3">
+                    <div class="d-flex align-items-center">
+                      <span>Lihat Lainnya</span>
+                      <i class='bx bx-right-arrow-alt ms-2' style="font-size: 20px;"></i>
+                    </div>
+                  </a>      
+                </div>
+            </div>
+            <!-- end aktivitas -->
+
+        </div>
+    </div>
+
+
+
+
+
+    <div class="wave4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mt-5">
+                    <h3 class="testi">Testimoni</h3>
+                    <div class="iner-dark-eid-v3"></div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="card card2 border-0">
+                    <img src="public/orang2.png" class="gambar2">
+
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="card card3 shadow">
+                    <div class="card-body card3 w-100">
+                        <p class="text-dark testimoni">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non odio malesuada congue purus. Est commodo malesuada faucibus lectus faucibus duis metus.</p>
+                        <h5 class="card-title text-end fw-bold">Robert Wilson</h5>
+                        <h6 class="text-end">Architect</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="wave5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mt-3">
+                    <h3 class="plan">Choose Your Plan</h3>
+                    <div class="iner-dark-eid-v3"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="container py-5">
+                    <div class="row px-5">
+                        <div class="col-lg-4 d-flex justify-content-center">
+                            <div class="card w-100 shadow-sm br-30 border-0">
+                                <div class="card-body">
+                                    <div class="pt-4 text-center pb-2">
+                                        <div class="text-eid-dark-v3 h4 fw-bold">Standard</div>
+                                        <div class="my-3 text-red h4 fw-bold">Gratis</div>
+                                        <div class="bb-dark-eid-v3 mt-4"></div>
+                                    </div>
+                                    <div class="px-4 mt-3">
+                                        <div class="d-flex align-items-center mb-3"><i class='"fa-sharp fa-solid fa-check-double text-eid-v3 fw-bold' style="font-size: 20px;"></i> <span class="text-eid-dark-v3 fw-bold ms-2">Online dan realtime</span></div>
+                                        <div class="d-flex align-items-center mb-3"><i class='"fa-sharp fa-solid fa-check-double text-eid-v3 fw-bold' style="font-size: 20px;"></i> <span class="text-eid-dark-v3 fw-bold ms-2">Katalog produk supplier</span></div>
+                                        <div class="d-flex align-items-center mb-3"><i class='fa-sharp fa-solid fa-xmark text-red fw-bold' style="font-size: 20px;"></i> <span class="text-eid-dark-v3 fw-bold ms-2">Unlimited nilai proyek</span></div>
+                                        <div class="d-flex align-items-center mb-3"><i class='fa-sharp fa-solid fa-xmark text-red fw-bold' style="font-size: 20px;"></i> <span class="text-eid-dark-v3 fw-bold ms-2">Kelola koleksi AHSP</span></div>
+                                        <div class="d-flex align-items-center mb-3"><i class='fa-sharp fa-solid fa-xmark text-red fw-bold' style="font-size: 20px;"></i> <span class="text-eid-dark-v3 fw-bold ms-2">Custom jumlah akun</span></div>
+                                        <div class="d-flex align-items-center mb-3"><i class='fa-sharp fa-solid fa-xmark text-red fw-bold' style="font-size: 20px;"></i> <span class="text-eid-dark-v3 fw-bold ms-2">Unlimited tim estimator</span></div>
+                                        <div class="my-4 text-center">
+                                            <a href="#" class="btn btn-eid-dark-v3 px-5 fw-bold">Get Started</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 d-flex justify-content-center">
+                            <div class="card w-100 shadow-eid-dark br-30 border-0 bg-eid-dark-v3 overflow-hidden">
+                                <div class="card-body">
+                                    <div class="pt-4 text-center pb-2">
+                                        <div class="text-white h4 fw-bold">Enterprise</div>
+                                        <div class="text-white h4 fw-bold"><span class="text-eid-light-v3">Rp </span><span class="fw-bold">149.000</span><span style="font-size: 14px;">/bulan</span></div>
+                                        <div class="border border-1 border-white"></div>
+                                    </div>
+                                    <div class="px-4 mt-3">
+                                        <div class="d-flex align-items-center mb-3"><i class='"fa-sharp fa-solid fa-check-double text-eid-light-v3 fw-bold' style="font-size: 20px;"></i> <span class="text-white fw-bold ms-2">Online dan realtime</span></div>
+                                        <div class="d-flex align-items-center mb-3"><i class='"fa-sharp fa-solid fa-check-double text-eid-light-v3 fw-bold' style="font-size: 20px;"></i> <span class="text-white fw-bold ms-2">Katalog produk supplier</span></div>
+                                        <div class="d-flex align-items-center mb-3"><i class='"fa-sharp fa-solid fa-check-double text-eid-light-v3 fw-bold' style="font-size: 20px;"></i> <span class="text-white fw-bold ms-2">Unlimited nilai proyek</span></div>
+                                        <div class="d-flex align-items-center mb-3"><i class='"fa-sharp fa-solid fa-check-double text-eid-light-v3 fw-bold' style="font-size: 20px;"></i> <span class="text-white fw-bold ms-2">Kelola koleksi AHSP</span></div>
+                                        <div class="d-flex align-items-center mb-3"><i class='fa-sharp fa-solid fa-xmark text-red fw-bold' style="font-size: 20px;"></i> <span class="text-white fw-bold ms-2">Custom jumlah akun</span></div>
+                                        <div class="d-flex align-items-center mb-3"><i class='fa-sharp fa-solid fa-xmark text-red fw-bold' style="font-size: 20px;"></i> <span class="text-white fw-bold ms-2">Unlimited tim estimator</span></div>
+                                        <div class="my-4 text-center">
+                                            <a href="#" class="btn btn-v3 text-eid-light-v33 fw-bold px-5">Get Started</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 d-flex justify-content-center ">
+                            <div class="card w-100 shadow-sm br-30 border-0 overflow-hidden">
+                                <div class="card-body">
+                                    <div class="pt-4 text-center pb-2">
+                                        <div class="text-eid-dark-v3 h4 fw-bold">Corporate</div>
+                                        <div class="text-eid-dark-v3 h4 fw-bold"><span class="text-eid-light-v3">Rp </span><span class="fw-bold">179.000</span><span style="font-size: 14px;">/bulan</span></div>
+                                        <div class="bb-dark-eid-v3"></div>
+                                    </div>
+                                    <div class="px-4 mt-3">
+                                        <div class="d-flex align-items-center mb-3"><i class='"fa-sharp fa-solid fa-check-double text-eid-v3 fw-bold' style="font-size: 20px;"></i> <span class="text-eid-dark-v3 fw-bold ms-2">Online dan realtime</span></div>
+                                        <div class="d-flex align-items-center mb-3"><i class='"fa-sharp fa-solid fa-check-double text-eid-v3 fw-bold' style="font-size: 20px;"></i> <span class="text-eid-dark-v3 fw-bold ms-2">Katalog produk supplier</span></div>
+                                        <div class="d-flex align-items-center mb-3"><i class='"fa-sharp fa-solid fa-check-double text-eid-v3 fw-bold' style="font-size: 20px;"></i> <span class="text-eid-dark-v3 fw-bold ms-2">Unlimited nilai proyek</span></div>
+                                        <div class="d-flex align-items-center mb-3"><i class='"fa-sharp fa-solid fa-check-double text-eid-v3 fw-bold' style="font-size: 20px;"></i> <span class="text-eid-dark-v3 fw-bold ms-2">Kelola koleksi AHSP</span></div>
+                                        <div class="d-flex align-items-center mb-3"><i class='"fa-sharp fa-solid fa-check-double text-eid-v3 fw-bold' style="font-size: 20px;"></i> <span class="text-eid-dark-v3 fw-bold ms-2">Custom jumlah akun</span></div>
+                                        <div class="d-flex align-items-center mb-3"><i class='"fa-sharp fa-solid fa-check-double text-eid-v3 fw-bold' style="font-size: 20px;"></i> <span class="text-eid-dark-v3 fw-bold ms-2">Unlimited tim estimator</span></div>
+                                        <div class="my-4 text-center">
+                                            <a href="#" class="btn btn-eid-dark-v3 px-5 fw-bold">Get Started</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wave6 my-5">
+        <div class="container mb-5 pb-5">
+            <div class="row">
+                <div class="col-12 text-center mt-3">
+                    <h3 class="klien">Klien Kami</h3>
+                    <div class="iner-dark-eid-v3"></div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="slider">
+                    <div class="slider-track text-center">
+                        <div class="slide ms-2 mx-5 px-4">
+                            <img src="public/sambel.png" height="100" width="100" alt="">
+                        </div>
+                        <div class="slide ms-2 mx-5 px-4">
+                            <img src="public/bee.png" height="100" width="100" alt="">
+                        </div>
+                        <div class="slide ms-2 mx-5 px-4">
+                            <img src="public/inkindo.png" height="100" width="100" alt="">
+                        </div>
+                        <div class="slide ms-2 mx-5 px-4">
+                            <img src="public/ecc.png" height="100" width="100" alt="">
+                        </div>
+                        <div class="slide ms-2 mx-5 px-4">
+                            <img src="public/ugm.png" height="100" width="100" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="bg-mega mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="main_contact" style="margin-top: 23px;">
+                    <div class="col-md-7 sm-m-top-30">
+                        <div class="row" style="width: 78%; padding-left: 17px;">
+
+                        </div>
+                    </div>
+                    <div class="col-md-2 sm-m-top-30" style="left: 28%;">
+                        <div class="row">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <footer style="background: linear-gradient(95.4deg, #68B020 0%, #A1EF54 100%);" class="mt-5">
+        <div class="container py-5">
+            <div class="row col-lg-12">
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-12 text-center mb-3 mb-md-0">
+                        <label class="text-center text-white">@copyright2022 Estimator.id</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer> -->
+    </main>
+    <script src="public/vendor/bootstrap5_2_1/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // aktivitas
+        let heightLandingaktivitas = $(".landing-aktivitas")[0].scrollHeight;
+        $(".landing-aktivitas .cards").css('height', heightLandingaktivitas);
+        // end aktivitas
+    </script>
+</body>
+
+</html>

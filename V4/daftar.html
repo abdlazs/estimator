@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/fav.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="asset/jquery/jquery-3.6.1.min.js"></script>
+
+    <link rel="stylesheet" href="asset/bootstrap5_2_1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="asset/fontawesome620/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.2/font/bootstrap-icons.min.css"
+      integrity="sha512-YFENbnqHbCRmJt5d+9lHimyEMt8LKSNTMLSaHjvsclnZGICeY/0KYEeiHwD1Ux4Tcao0h60tdcMv+0GljvWyHg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="asset/owlcarousel/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="asset/owlcarousel/assets/owl.theme.default.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.6.14/sweetalert2.min.css"
+      integrity="sha512-NvuRGlPf6cHpxQqBGnPe7fPoACpyrjhlSNeXVUY7BZAj1nNhuNpRBq3osC4yr2vswUEuHq2HtCsY2vfLNCndYA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="main/main.css" />
+    <link rel="stylesheet" href="main/auth.css" />
+    <title>Estimator.id</title>
+  </head>
+
+  <body>
+    <main>
+      <section id="auth">
+        <div class="container-fluid p-5">
+          <div
+            class="row bg-success-light rounded-24 p-4 pb-5 justify-content-between position-relative"
+          >
+            <div class="watermark">
+              <p class="fst-italic fw-700 fs-28 lh-48">ESTIMATOR.ID</p>
+              <p class="fs-16 fw-400 lh-16">© 2020. Estimator Indonesia</p>
+            </div>
+            <div class="col-lg-7">
+              <a href="/">
+                <img src="img/logo.png" alt="" />
+              </a>
+              <img src="img/bg-login.png" alt="" />
+            </div>
+            <div class="col-lg-4">
+              <div class="card">
+                <div class="card-header">
+                  <p class="fw-medium fs-24 fw-500 lh-36">Selamat Datang...</p>
+                  <p class="fs-14 fw-400 lh-24 text-semidark">
+                    Silakan mendaftar untuk menggunakan Estimator
+                  </p>
+                </div>
+                <div class="card-body">
+                  <form id="form-daftar">
+                    <div class="mb-3">
+                      <input
+                        type="text"
+                        name="nama_lengkap"
+                        class="form-control"
+                        placeholder="Masukkan Nama Lengkap"
+                        autocomplete="off"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <input
+                        type="email"
+                        name="email"
+                        class="form-control"
+                        placeholder="Masukkan Email"
+                        autocomplete="off"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <input
+                        type="password"
+                        name="password"
+                        class="form-control"
+                        placeholder="Masukkan Password"
+                        autocomplete="off"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <button
+                        type="submit"
+                        class="btn btn-success btn-lg w-100 py-3"
+                      >
+                        Daftar
+                      </button>
+                    </div>
+                  </form>
+                  <div class="option">
+                    <hr />
+                    <span>atau</span>
+                    <a href="#" class="google">
+                      <img src="img/google.png" alt="" />
+                      <p>Daftar dengan akun Google</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="card mt-3">
+                <div class="card-body py-4">
+                  <p class="text-semidark fw-400 fs-16 lh-24 text-center my-2">
+                    Sudah memiliki akun?
+                    <a href="masuk.html" class="text-success fw-500 fs-16 lh-24"
+                      >Masuk Sekarang</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      $(document).ready(function () {
+        $("#form-daftar").submit(function (e) {
+          e.preventDefault();
+          const nama_lengkap = $(this).find('input[name="nama_lengkap"]').val();
+          const email = $(this).find('input[name="email"]').val();
+          const password = $(this).find('input[name="password"]').val();
+          if (nama_lengkap == "" || email == "" || password == "") {
+            Swal.fire({
+              title: "Informasi",
+              text: "Mohon maaf, silahkan isi semua informasi yang diperlukan terlebih dahulu agar dapat melanjutkan proses pendaftaran.",
+              icon: "info",
+              confirmButtonText: "OK",
+            });
+          } else {
+            Swal.fire({
+              title: "Berhasil",
+              text: "Silahkan klik tombol dibawah ini untuk diarahkan kehalaman berikutnya.",
+              icon: "success",
+              confirmButtonText: "OK",
+            });
+          }
+        });
+      });
+    </script>
+    <script src="main/main.js"></script>
+    <script src="asset/bootstrap5_2_1/js/bootstrap.bundle.min.js"></script>
+    <script src="asset/owlcarousel/owl.carousel.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.6.14/sweetalert2.min.js"
+      integrity="sha512-IkaCJvo6mnhvjb19W3EUaF9br7agaSSK03Q0ytLaZ2kK50iPHN9uXqPZoVyh+jEUeu1FmyJxVHEKk5nYARfnaQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>
